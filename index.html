@@ -4,7 +4,6 @@
 	<title>AboutUs</title>
 	<meta charset="utf-8">
 	<link href="app.css" rel="stylesheet" type="text/css">
-	
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -23,21 +22,24 @@
 				<t2>我們是一群瘋癲又有才的熱血年輕人，<br>廢話不多，請往右移！<br><br>就用一句話來認識我們。
 				</t2>
 			</p>
+			<p class="name">
+				name<br><br><br><br><br><br>quote
+			</p>
 			<img class="quote" src="https://i.imgur.com/FhXXUW9.png">
 			<img class="back" src="https://i.imgur.com/JiNUZEQ.png">
 		</div>
 		<div id="members">
 			<div class="first row">
-				<div id="CHUEH" class="frame"></div>
-				<div id="KE" class="frame"></div>
+				<div id="CHUEH" class="frame" ><img src = "https://i.imgur.com/Fq8AHjI.png"></div>
+				<div id="KE" class="frame"><img src ="https://i.imgur.com/eCyrqtM.png"></div>
 			</div>
 			<div class="second row">
-				<div id="SU" class="frame"></div>
-				<div id="LIAO" class="frame"></div>
+				<div id="SU" class="frame"><img src ="https://i.imgur.com/f2svmBF.png"></div>
+				<div id="LIAO" class="frame"><img src ="https://i.imgur.com/mwhHx7L.png"></div>
 			</div>
 			<div class="third row">
-				<div id="WU" class="frame"></div>
-				<div id="CHEN" class="frame"></div>
+				<div id="WU" class="frame"><img src =""></div>
+				<div id="CHEN" class="frame"><img src="https://i.imgur.com/9s5Mq5w.png"></div>
 			</div>
 		</div>
 	</div>
@@ -46,6 +48,7 @@
 	$(document).ready(function(){
 		$("#content .back").toggle()
 		$("#content .quote").toggle()
+		$("#content .name").toggle()
 		$(".frame").click(function(){
 			$("#content p").toggle()
 			$("#content .title").toggle()
@@ -53,6 +56,31 @@
 			$("#content .quote").toggle("slow")
 			$(".frame").not(this).toggle("slow")
 			$(this).toggleClass( "showing", 1000)	
+			if($(this).is("#CHUEH")){
+				$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png");
+				$("#CHUEH img").toggleClass( "showing", 1000);
+			}
+			if($(this).is("#KE")){
+				$("#KE img").attr("src","https://i.imgur.com/ZRgJHOl.png");
+				$("#KE img").toggleClass( "showing", 1000);
+			}
+			if($(this).is("#SU")){
+				$("#SU img").attr("src","https://i.imgur.com/Bv17oaZ.png");
+				$("#SU img").toggleClass( "showing", 1000);
+			}
+			if($(this).is("#LIAO")){
+				$("#LIAO img").attr("src","https://i.imgur.com/zRc62vI.png");
+				$("#LIAO img").toggleClass( "showing", 1000);
+			}
+			if($(this).is("#WU")){
+				$("#WU img").attr("src","");
+				$("#WU img").toggleClass( "showing", 1000);
+			}
+			if($(this).is("#CHEN")){
+				$("#CHEN img").attr("src","https://i.imgur.com/pwQW97u.png");
+				$("#CHEN img").toggleClass( "showing", 1000);
+			}
+
 		})
 	})
 </script>
