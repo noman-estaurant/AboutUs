@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
 
 #header{
 	margin: 40px;
@@ -28,16 +28,18 @@
 }
 
 #content .text t1{
-	font-size: 18px;
-	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 20px;
+	font-family: 'Kosugi Maru', sans-serif;
 	position: absolute;
 	left:50px;
 	top:220px;
+	line-height: 25px;
 }
 
 #content .text t2{
-	font-size: 18px;
-	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+	font-family: 'Kosugi Maru', sans-serif;
 	position: absolute;
 	left:50px;
 	top:300px;
@@ -128,9 +130,11 @@
 }
 
 #content .name {
-	font-size: 18px;
-	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 20px;
+	font-family: 'Kosugi Maru', sans-serif;
 	position: absolute;
 	left:85px;
 	top:120px;
+	line-height: 25px;
+
 }
