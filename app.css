@@ -55,14 +55,6 @@ html, body {
   width: 80%;
 }
 
-#content .back{
-	width: 6%;
-	position: absolute;
-	left:30px;
-	top:400px;
-	cursor: pointer;
-}
-
 #content .subtitle {
 	margin-top: 10%;
 	margin-left: 10%;
@@ -93,18 +85,42 @@ html, body {
 	margin-top: 5%;
 }
 
-#content .back {
-  width: 6%;
-  position: absolute;
-  left: 30px;
-  top: 400px;
+#app {
+  height: 100%;
 }
 
-#content .quote {
-  width: 10%;
+#app .person {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#app .person .name {
+  font-size: 33px;
+  font-family: 'Kosugi Maru', sans-serif;
+  margin-left: 15%;
+}
+
+#app .person .name--top {
+  margin-top: 30%;
+}
+
+#app .person .quote {
+  margin-top: 10%;
+  margin-left: 13%;
+  width: 15%;
+}
+
+#app .person .name--bottom {
+  margin-top: 3%;
+}
+
+#app .person .back {
   position: absolute;
-  left: 80px;
-  top: 220px;
+  bottom: 50px;
+  left: 30px;
+  width: 8%;
+	cursor: pointer;
 }
 
 #members {
@@ -166,13 +182,4 @@ html, body {
 	margin-right: 120px;
   width: 500px;
   height: 500px;
-}
-
-#content .name {
-  font-size: 20px;
-  font-family: 'Kosugi Maru', sans-serif;
-  position: absolute;
-  left: 85px;
-  top: 120px;
-  line-height: 25px;
 }

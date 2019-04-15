@@ -8,89 +8,94 @@ let display = true
 			$("#content p").toggle("slow")
 			$("#content .title").toggle("slow")
 			$("#content .back").toggle("slow")
+			$("#content .article").toggle("slow")
+			$("#content .subtitle").toggle("slow")
 			$("#content .quote").toggle("slow")
 			$(".frame").not(this).toggle("slow")
 			if($(this).is("#CHUEH")){
 				app.CHUEH.is=!app.CHUEH.is;
-				display?$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH img").attr("src","https://i.imgur.com/Fq8AHjI.png");
-				$("#CHUEH img").toggleClass( "showing", 1000);
+				display?$("#CHUEH").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH").attr("src","https://i.imgur.com/Fq8AHjI.png");
+				$("#CHUEH").toggleClass( "showingTop", 1000);
 				display = !display
 			}
 			if($(this).is("#KE")){
 				app.KE.is=!app.KE.is;
-				display?$("#KE img").attr("src","https://i.imgur.com/ZRgJHOl.png"):$("#KE img").attr("src","https://i.imgur.com/eCyrqtM.png")
-				$("#KE img").toggleClass( "showing", 1000);
+				display?$("#KE").attr("src","https://i.imgur.com/ZRgJHOl.png"):$("#KE").attr("src","https://i.imgur.com/eCyrqtM.png")
+				$("#KE").toggleClass( "showingTop", 1000);
 				display = !display
 			}
 			if($(this).is("#SU")){
 				app.SU.is=!app.SU.is;
-				display?$("#SU img").attr("src","https://i.imgur.com/Bv17oaZ.png"):$("#SU img").attr("src","https://i.imgur.com/f2svmBF.png")
-				$("#SU img").toggleClass( "showing", 1000);
+				display?$("#SU").attr("src","https://i.imgur.com/Bv17oaZ.png"):$("#SU").attr("src","https://i.imgur.com/f2svmBF.png")
+				$("#SU").toggleClass( "showing", 1000);
 				display = !display
 			}
 			if($(this).is("#LIAO")){
 				app.LIAO.is=!app.LIAO.is;
-				display?$("#LIAO img").attr("src","https://i.imgur.com/zRc62vI.png"):$("#LIAO img").attr("src","https://i.imgur.com/mwhHx7L.png")
-				$("#LIAO img").toggleClass( "showing", 1000);
+				display?$("#LIAO").attr("src","https://i.imgur.com/zRc62vI.png"):$("#LIAO").attr("src","https://i.imgur.com/mwhHx7L.png")
+				$("#LIAO").toggleClass( "showing", 1000);
 				display = !display
 			}
 			if($(this).is("#WU")){
 				app.WU.is=!app.WU.is;
-				display?$("#WU img").attr("src",""):$("#WU img").attr("src","")
-				$("#WU img").toggleClass( "showing", 1000);
+				display?$("#WU").attr("src",""):$("#WU").attr("src","")
+				$("#WU").toggleClass( "showingBottom", 1000);
 				display = !display
 			}
 			if($(this).is("#CHEN")){
 				app.CHEN.is=!app.CHEN.is;
-				display?$("#CHEN img").attr("src","https://i.imgur.com/pwQW97u.png"):$("#CHEN img").attr("src","https://i.imgur.com/9s5Mq5w.png")
-				$("#CHEN img").toggleClass( "showing", 1000);
+				display?$("#CHEN").attr("src","https://i.imgur.com/pwQW97u.png"):$("#CHEN").attr("src","https://i.imgur.com/9s5Mq5w.png")
+				$("#CHEN").toggleClass( "showingBottom", 1000);
 				display = !display
 			}
 		})
-		$(".back").click(function(){
-			$("#content p").toggle("slow")
-			$("#content .title").toggle("slow")
-			$("#content .back").toggle("slow")
-			$("#content .quote").toggle("slow")
-			$(".frame").not(tempsave).toggle("slow")
-			if($(tempsave).is("#CHUEH")){
-				app.CHUEH.is=!app.CHUEH.is;
-				display?$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH img").attr("src","https://i.imgur.com/Fq8AHjI.png");
-				$("#CHUEH img").toggleClass( "showing", 1000);
-				display = !display
-			}
-			if($(tempsave).is("#KE")){
-				app.KE.is=!app.KE.is;
-				display?$("#KE img").attr("src","https://i.imgur.com/ZRgJHOl.png"):$("#KE img").attr("src","https://i.imgur.com/eCyrqtM.png")
-				$("#KE img").toggleClass( "showing", 1000);
-				display = !display
-			}
-			if($(tempsave).is("#SU")){
-				app.SU.is=!app.SU.is;
-				display?$("#SU img").attr("src","https://i.imgur.com/Bv17oaZ.png"):$("#SU img").attr("src","https://i.imgur.com/f2svmBF.png")
-				$("#SU img").toggleClass( "showing", 1000);
-				display = !display
-			}
-			if($(tempsave).is("#LIAO")){
-				app.LIAO.is=!app.LIAO.is;
-				display?$("#LIAO img").attr("src","https://i.imgur.com/zRc62vI.png"):$("#LIAO img").attr("src","https://i.imgur.com/mwhHx7L.png")
-				$("#LIAO img").toggleClass( "showing", 1000);
-				display = !display
-			}
-			if($(tempsave).is("#WU")){
-				app.WU.is=!app.WU.is;
-				display?$("#WU img").attr("src",""):$("#WU img").attr("src","")
-				$("#WU img").toggleClass( "showing", 1000);
-				display = !display
-			}
-			if($(tempsave).is("#CHEN")){
-				app.CHEN.is=!app.CHEN.is;
-				display?$("#CHEN img").attr("src","https://i.imgur.com/pwQW97u.png"):$("#CHEN img").attr("src","https://i.imgur.com/9s5Mq5w.png")
-				$("#CHEN img").toggleClass( "showing", 1000);
-				display = !display
-			}
-    })
 	})
+
+	function test(){
+		$("#content p").toggle("slow")
+		$("#content .title").toggle("slow")
+		$("#content .article").toggle("slow")
+		$("#content .subtitle").toggle("slow")
+		$("#content .back").toggle("slow")
+		$("#content .quote").toggle("slow")
+		$(".frame").not(tempsave).toggle("slow")
+		if($(tempsave).is("#CHUEH")){
+			app.CHUEH.is=!app.CHUEH.is;
+			display?$("#CHUEH").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH").attr("src","https://i.imgur.com/Fq8AHjI.png");
+			$("#CHUEH").toggleClass( "showingTop", 1000);
+			display = !display
+		}
+		if($(tempsave).is("#KE")){
+			app.KE.is=!app.KE.is;
+			display?$("#KE").attr("src","https://i.imgur.com/ZRgJHOl.png"):$("#KE").attr("src","https://i.imgur.com/eCyrqtM.png")
+			$("#KE").toggleClass( "showingTop", 1000);
+			display = !display
+		}
+		if($(tempsave).is("#SU")){
+			app.SU.is=!app.SU.is;
+			display?$("#SU").attr("src","https://i.imgur.com/Bv17oaZ.png"):$("#SU").attr("src","https://i.imgur.com/f2svmBF.png")
+			$("#SU").toggleClass( "showing", 1000);
+			display = !display
+		}
+		if($(tempsave).is("#LIAO")){
+			app.LIAO.is=!app.LIAO.is;
+			display?$("#LIAO").attr("src","https://i.imgur.com/zRc62vI.png"):$("#LIAO").attr("src","https://i.imgur.com/mwhHx7L.png")
+			$("#LIAO").toggleClass( "showing", 1000);
+			display = !display
+		}
+		if($(tempsave).is("#WU")){
+			app.WU.is=!app.WU.is;
+			display?$("#WU").attr("src",""):$("#WU").attr("src","")
+			$("#WU").toggleClass( "showingBottom", 1000);
+			display = !display
+		}
+		if($(tempsave).is("#CHEN")){
+			app.CHEN.is=!app.CHEN.is;
+			display?$("#CHEN").attr("src","https://i.imgur.com/pwQW97u.png"):$("#CHEN").attr("src","https://i.imgur.com/9s5Mq5w.png")
+			$("#CHEN").toggleClass( "showingBottom", 1000);
+			display = !display
+		}
+	}
 
 var app = new Vue({
 	el:'#app',
@@ -99,7 +104,7 @@ var app = new Vue({
 			name:'闕郁珊',
 			quote:'有錢能使鬼推磨',
 			is:false
-		},		
+		},
 		KE:{
 			name:'葛綜棠',
 			quote:'この世界に本当のオリジナルは、自分の人生しかないですから。',

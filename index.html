@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>AboutUs</title>
-	<meta charset="utf-8">
-	<link href="app.css" rel="stylesheet" type="text/css">	
-	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<!-- SemanticUI -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" rel="stylesheet" type="text/css">
-	<!--Vue js-->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
-<body>
-	<div id="header">
-	</div>
-	<div class="block">
-		<div id="content">
-			<img class="title" src="https://i.imgur.com/gsOvgrJ.png">
-			<p class="text">
-				<t1><b>我們做事，<br>品質保證。</b></t1>
-				<t2>我們是一群瘋癲又有才的熱血年輕人，<br>廢話不多，請往右移！<br><br>就用一句話來認識我們。
-				</t2>
-			</p>
-			<div id="app">
-				<p class="name" v-if="CHUEH.is">{{CHUEH.name}}<br><br><br><br><br><br>{{CHUEH.quote}}</p>
-				<p class="name" v-else-if="KE.is">{{KE.name}}<br><br><br><br><br><br>{{KE.quote}}</p>
-				<p class="name" v-else-if="SU.is">{{SU.name}}<br><br><br><br><br><br>{{SU.quote}}</p>
-				<p class="name" v-else-if="LIAO.is">{{LIAO.name}}<br><br><br><br><br><br>{{LIAO.quote}}</p>
-				<p class="name" v-else-if="WU.is">{{WU.name}}<br><br><br><br><br><br>{{WU.quote}}</p>
-				<p class="name" v-else-if="CHEN.is">{{CHEN.name}}<br><br><br><br><br><br>{{CHEN.quote}}</p>
-				<p class="name" v-else>name<br><br><br><br><br><br>quote</p>
-				<img class="quote" src="https://i.imgur.com/FhXXUW9.png">
-				<img class="back" src="https://i.imgur.com/JiNUZEQ.png">
-			</div>
-		</div>
-		<div id="members">
-			<div class="first row">
-				<div id="CHUEH" class="frame"><img src = "https://i.imgur.com/Fq8AHjI.png"></div>
-				<div id="KE" class="frame"><img src ="https://i.imgur.com/eCyrqtM.png"></div>
-			</div>
-			<div class="second row">
-				<div id="SU" class="frame"><img src ="https://i.imgur.com/f2svmBF.png"></div>
-				<div id="LIAO" class="frame"><img src ="https://i.imgur.com/mwhHx7L.png"></div>
-			</div>
-			<div class="third row">
-				<div id="WU" class="frame"><img src =""></div>
-				<div id="CHEN" class="frame"><img src="https://i.imgur.com/9s5Mq5w.png"></div>
-			</div>
-		</div>
-	</div>
-</body>
-<script src="app.js"></script>
+  <head>
+    <title>AboutUs</title>
+    <meta charset="utf-8" />
+    <link href="app.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- SemanticUI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Vue js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="block">
+      <div id="content">
+        <img class="title" src="https://i.imgur.com/gsOvgrJ.png" />
+        <div class="subtitle">
+          <h1 class="header">我們做事，</h1>
+          <h1 class="header">品質保證。</h1>
+        </div>
+        <div class="article">
+          <h2 class="text">我們是一群瘋癲又有才的熱血年輕人，</h2>
+          <h2 class="text">廢話不多，請往右移！</h2>
+          <h2 class="text text--bottom">就用一句話來認識我們。</h2>
+        </div>
+        <div id="app">
+					<div class="person" v-if="CHUEH.is">
+						<p class="name name--top">{{ CHUEH.name }}</p>
+						<img class="quote" src="https://i.imgur.com/FhXXUW9.png" />
+						<p class="name name--bottom">{{ CHUEH.quote }}</p>
+						<img class="back" onclick="test()" src="https://i.imgur.com/JiNUZEQ.png" />
+					</div>
+					<div class="person" v-if="KE.is">
+						<p class="name name--top">{{ KE.name }}</p>
+						<img class="quote" src="https://i.imgur.com/FhXXUW9.png" />
+						<p class="name name--bottom">{{ KE.quote }}</p>
+						<img onclick="test()" class="back" src="https://i.imgur.com/JiNUZEQ.png" />
+					</div>
+					<div class="person" v-if="SU.is">
+						<p class="name name--top">{{ SU.name }}</p>
+						<img class="quote" src="https://i.imgur.com/FhXXUW9.png" />
+						<p class="name name--bottom">{{ SU.quote }}</p>
+						<img onclick="test()" class="back" src="https://i.imgur.com/JiNUZEQ.png" />
+					</div>
+					<div class="person" v-if="LIAO.is">
+						<p class="name name--top">{{ LIAO.name }}</p>
+						<img class="quote" src="https://i.imgur.com/FhXXUW9.png" />
+						<p class="name name--bottom">{{ LIAO.quote }}</p>
+						<img onclick="test()" class="back" src="https://i.imgur.com/JiNUZEQ.png" />
+					</div>
+					<div class="person" v-if="WU.is">
+						<p class="name name--top">{{ WU.name }}</p>
+						<img class="quote" src="https://i.imgur.com/FhXXUW9.png" />
+						<p class="name name--bottom">{{ WU.quote }}</p>
+						<img onclick="test()" class="back" src="https://i.imgur.com/JiNUZEQ.png" />
+					</div>
+					<div class="person" v-if="CHEN.is">
+						<p class="name name--top">{{ CHEN.name }}</p>
+						<img class="quote" src="https://i.imgur.com/FhXXUW9.png" />
+						<p class="name name--bottom">{{ CHEN.quote }}</p>
+						<img onclick="test()" class="back" src="https://i.imgur.com/JiNUZEQ.png" />
+					</div>
+        </div>
+      </div>
+      <div id="members">
+        <div class="first row">
+          <img id="CHUEH" class="frame" src="https://i.imgur.com/Fq8AHjI.png" />
+          <img id="KE" class="frame" src="https://i.imgur.com/eCyrqtM.png" />
+        </div>
+        <div class="second row">
+          <img id="SU" class="frame" src="https://i.imgur.com/f2svmBF.png" />
+          <img id="LIAO" class="frame" src="https://i.imgur.com/mwhHx7L.png" />
+        </div>
+        <div class="third row">
+          <img id="WU" class="frame" src="" />
+          <img id="CHEN" class="frame" src="https://i.imgur.com/9s5Mq5w.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
