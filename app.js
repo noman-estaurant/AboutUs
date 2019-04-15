@@ -41,4 +41,7 @@ let display = true
 				display = !display
 			}
 		})
+  $(".quote").click(function(){
+
+    })
 	})
