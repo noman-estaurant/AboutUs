@@ -1,4 +1,4 @@
-let display = true	
+let display = true
 	$(document).ready(function(){
 		$("#content .back").toggle()
 		$("#content .quote").toggle()
@@ -10,7 +10,6 @@ let display = true
 			$("#content .back").toggle("slow")
 			$("#content .quote").toggle("slow")
 			$(".frame").not(this).toggle("slow")
-			$(this).toggleClass( "showing", 1000)
 			if($(this).is("#CHUEH")){
 				app.CHUEH.is=!app.CHUEH.is;
 				display?$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH img").attr("src","https://i.imgur.com/Fq8AHjI.png");
@@ -54,7 +53,6 @@ let display = true
 			$("#content .back").toggle("slow")
 			$("#content .quote").toggle("slow")
 			$(".frame").not(tempsave).toggle("slow")
-			$(tempsave).toggleClass( "showing", 1000)
 			if($(tempsave).is("#CHUEH")){
 				app.CHUEH.is=!app.CHUEH.is;
 				display?$("#CHUEH img").attr("src","https://i.imgur.com/adK2Tmu.png"):$("#CHUEH img").attr("src","https://i.imgur.com/Fq8AHjI.png");
@@ -91,7 +89,7 @@ let display = true
 				$("#CHEN img").toggleClass( "showing", 1000);
 				display = !display
 			}
-    		})	
+    })
 	})
 
 var app = new Vue({
