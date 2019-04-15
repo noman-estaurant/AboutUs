@@ -4,7 +4,7 @@ let display = true
 		$("#content .quote").toggle()
 		$("#content .name").toggle()
 		$(".frame").click(function(){
-			tempsave=this     //Save current this as tempsave to make back works
+			tempsave=this     //Save current "this" as "tempsave" to make back (function) work
 			$("#content p").toggle("slow")
 			$("#content .title").toggle("slow")
 			$("#content .back").toggle("slow")
