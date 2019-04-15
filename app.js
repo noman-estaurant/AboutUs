@@ -4,8 +4,8 @@ let display = true
 		$("#content .quote").toggle()
 		$("#content .name").toggle()
 		$(".frame").click(function(){
-			$("#content p").toggle()
-			$("#content .title").toggle()
+			$("#content p").toggle("slow")
+			$("#content .title").toggle("slow")
 			$("#content .back").toggle("slow")
 			$("#content .quote").toggle("slow")
 			$(".frame").not(this).toggle("slow")
