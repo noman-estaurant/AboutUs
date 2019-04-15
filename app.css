@@ -57,6 +57,7 @@
 	position: absolute;
 	left:30px;
 	top:400px;
+	cursor: pointer;
 }
 
 #content .quote{
@@ -117,16 +118,19 @@
 	height: 150px;
 	border-radius: 50%;
 	background: white;
+	cursor: pointer;
 }
 
 #members .frame.showing{
 	width: 300px;
 	height: 300px;
+	cursor: pointer;
 }
 
 #members img.showing{
 	width: 300px;
 	height: 300px;
+	cursor: pointer;
 }
 
 #content .name {
