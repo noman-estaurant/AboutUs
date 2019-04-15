@@ -10,6 +10,8 @@
 	<!-- SemanticUI -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" rel="stylesheet" type="text/css">
+	<!--Vue js-->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -22,15 +24,21 @@
 				<t2>我們是一群瘋癲又有才的熱血年輕人，<br>廢話不多，請往右移！<br><br>就用一句話來認識我們。
 				</t2>
 			</p>
-			<p class="name">
-				name<br><br><br><br><br><br>quote
-			</p>
-			<img class="quote" src="https://i.imgur.com/FhXXUW9.png">
-			<img class="back" src="https://i.imgur.com/JiNUZEQ.png">
+			<div id="app">
+				<p class="name" v-if="CHUEH.is">{{CHUEH.name}}<br><br><br><br><br><br>{{CHUEH.quote}}</p>
+				<p class="name" v-else-if="KE.is">{{KE.name}}<br><br><br><br><br><br>{{KE.quote}}</p>
+				<p class="name" v-else-if="SU.is">{{SU.name}}<br><br><br><br><br><br>{{SU.quote}}</p>
+				<p class="name" v-else-if="LIAO.is">{{LIAO.name}}<br><br><br><br><br><br>{{LIAO.quote}}</p>
+				<p class="name" v-else-if="WU.is">{{WU.name}}<br><br><br><br><br><br>{{WU.quote}}</p>
+				<p class="name" v-else-if="CHEN.is">{{CHEN.name}}<br><br><br><br><br><br>{{CHEN.quote}}</p>
+				<p class="name" v-else>name<br><br><br><br><br><br>quote</p>
+				<img class="quote" src="https://i.imgur.com/FhXXUW9.png">
+				<img class="back" src="https://i.imgur.com/JiNUZEQ.png">
+			</div>
 		</div>
 		<div id="members">
 			<div class="first row">
-				<div id="CHUEH" class="frame" ><img src = "https://i.imgur.com/Fq8AHjI.png"></div>
+				<div id="CHUEH" class="frame"><img src = "https://i.imgur.com/Fq8AHjI.png"></div>
 				<div id="KE" class="frame"><img src ="https://i.imgur.com/eCyrqtM.png"></div>
 			</div>
 			<div class="second row">
