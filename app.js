@@ -97,7 +97,7 @@ var app = new Vue({
 	data:{
 		CHUEH:{
 			name:'闕郁珊',
-			quote:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deserunt, rerum laboriosam eveniet accusamus error fuga nihil maxime iure. Ratione hic veniam quaerat earum nobis distinctio, in eveniet ipsum dolorem.',
+			quote:'有錢能使鬼推磨',
 			is:false
 		},		
 		KE:{
