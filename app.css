@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Sawarabi+Mincho');
 
 html, body {
 	height: 100%;
@@ -29,24 +29,6 @@ html, body {
   width: 50%;
   height: 100%;
   background-color: #f7f7f7;
-}
-
-#content .text t1 {
-  font-size: 20px;
-  font-family: 'Noto Sans TC', sans-serif;
-  position: absolute;
-  left: 50px;
-  top: 220px;
-  line-height: 25px;
-}
-
-#content .text t2 {
-  font-size: 20px;
-  line-height: 25px;
-  font-family: 'Noto Sans TC', sans-serif;
-  position: absolute;
-  left: 50px;
-  top: 300px;
 }
 
 #content .title {
@@ -103,6 +85,10 @@ html, body {
 
 #app .person .name--top {
   margin-top: 30%;
+}
+
+#app .person .name--japan {
+  font-family: 'Sawarabi Mincho', sans-serif;
 }
 
 #app .person .quote {
