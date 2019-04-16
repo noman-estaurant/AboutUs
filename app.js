@@ -38,7 +38,7 @@ let display = true
 			}
 			if($(this).is("#WU")){
 				app.WU.is=!app.WU.is;
-				display?$("#WU").attr("src",""):$("#WU").attr("src","")
+				display?$("#WU").attr("src","https://via.placeholder.com/450x450"):$("#WU").attr("src","https://via.placeholder.com/228x215")
 				$("#WU").toggleClass( "showingBottom", 1000);
 				display = !display
 			}
@@ -85,7 +85,7 @@ let display = true
 		}
 		if($(tempsave).is("#WU")){
 			app.WU.is=!app.WU.is;
-			display?$("#WU").attr("src",""):$("#WU").attr("src","")
+			display?$("#WU").attr("src","https://via.placeholder.com/450x450"):$("#WU").attr("src","https://via.placeholder.com/228x215")
 			$("#WU").toggleClass( "showingBottom", 1000);
 			display = !display
 		}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 
 html, body {
 	height: 100%;
@@ -33,7 +33,7 @@ html, body {
 
 #content .text t1 {
   font-size: 20px;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   position: absolute;
   left: 50px;
   top: 220px;
@@ -43,7 +43,7 @@ html, body {
 #content .text t2 {
   font-size: 20px;
   line-height: 25px;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   position: absolute;
   left: 50px;
   top: 300px;
@@ -65,7 +65,7 @@ html, body {
 	margin-top: 3px;
 	margin-bottom: 0;
 	font-size: 40px;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 #content .article {
@@ -78,7 +78,7 @@ html, body {
 	margin-bottom: 0;
 	font-size: 33px;
 	font-weight: normal;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 #content .article .text--bottom {
@@ -97,7 +97,7 @@ html, body {
 
 #app .person .name {
   font-size: 33px;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   margin-left: 15%;
 }
 
@@ -135,11 +135,6 @@ html, body {
 	width: 50%;
 }
 
-#members img {
-	height: 200px;
-	cursor: pointer;
-}
-
 .row {
   display: flex;
   margin: 0.2%;
@@ -160,26 +155,27 @@ html, body {
   margin: 5px;
 }
 #members .frame {
-  margin: 25px;
-  width: 200px;
-  height: 200px;
+  margin: 5px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background: white;
+  cursor: pointer;
 }
 
 #members .frame.showing {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 }
 
 #members .frame.showingBottom {
 	margin-left: 120px;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 }
 
 #members .frame.showingTop {
 	margin-right: 120px;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 }
